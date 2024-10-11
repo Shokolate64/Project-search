@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Imágenes - Búsqueda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor de enlaces en la esquina superior derecha -->
+    <header>
+        <div class="header-links">
+            <!-- Enlace a la página principal -->
+            <a href="index.html">Buscar en la Web</a>
+            <!-- Enlace a Búsqueda avanzada -->
+            <a href="advanced_search.html">Búsqueda avanzada</a>
+        </div>
+    </header>
+
+    <div class="centered-container">
+        <!-- Logo de Google Imágenes en colores (modo claro) -->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Imágenes" class="logo" id="google-logo-light">
+        <!-- Logo de Google Imágenes en blanco (modo oscuro) -->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google Imágenes Blanco" class="logo" id="google-logo-dark">
+
+        <!-- Barra de búsqueda -->
+        <form class="search-form" action="https://www.google.com/search" method="GET">
+            <!-- Campo oculto para indicar que es búsqueda de imágenes -->
+            <input type="hidden" name="tbm" value="isch">
+            <!-- Barra de búsqueda -->
+            <div class="search-box">
+                <input type="text" name="q" class="search-input" placeholder="Buscar imágenes..." autocomplete="off">
+            </div>
+            <!-- Botones de búsqueda -->
+            <div class="buttons">
+                <button type="submit" class="btn">Buscar imágenes</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

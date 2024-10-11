@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal de Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor de enlaces en la esquina superior derecha -->
+    <header>
+        <div class="header-links">
+            <!-- Enlace a Google Imágenes -->
+            <a href="images.html">Imágenes</a>
+            <!-- Enlace a Búsqueda avanzada -->
+            <a href="advanced_search.html">Búsqueda avanzada</a>
+        </div>
+    </header>
+
+    <div class="centered-container">
+        <!-- Logo de Google -->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo" id="google-logo">
+
+        <!-- Barra de búsqueda -->
+        <form class="search-form" action="https://www.google.com/search" method="GET">
+            <div class="search-box">
+                <input type="text" name="q" class="search-input" placeholder="Buscar en Google..." autocomplete="off">
+            </div>
+            <!-- Botones de búsqueda -->
+            
+                <!-- Botón "Buscar con Google" -->
+                <button type="submit" id="search-btn" class="btn">Buscar con Google</button>
+                <!-- Botón "Voy a tener suerte" -->
+                <button type="button" id="lucky-btn" class="btn">Voy a tener suerte</button>
+ 
+            
+        </form>
+
+        <!-- Texto de idioma -->
+        <div class="footer-language">
+            <span>Google ofrecido en: <a href="#">Español (Latinoamérica)</a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

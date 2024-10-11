@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda avanzada de Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="advanced-search"> <!-- Añadimos la clase aquí -->
+     <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <!-- Logo de Google -->
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" class="logo">
+            <!-- Texto Búsqueda avanzada -->
+            <span class="advanced-search-text">Búsqueda avanzada</span>
+        </div>
+
+        <!-- Links hacia las otras páginas -->
+        <div class="header-right">
+            <a href="index.html">Buscar en la Web</a>
+            <a href="images.html">Buscar en Imágenes</a>
+        </div>
+    </header>
+    <!-- Línea divisora ocupando el 100% del ancho de la página -->
+    <hr class="full-width-divider">
+
+    <div class="advanced-search-container">
+        
+         <!-- Contenedor que agrupa ambos títulos -->
+        <div class="title-container">
+            <!-- Texto a la izquierda -->
+            <div class="title-text-left">Mostrar páginas que contengan...</div>
+
+            <!-- Texto a la derecha -->
+           <div class="title-text-right">Para hacer esto en el cuadro de búsqueda</div>
+        </div>
+
+        <!-- Formulario de búsqueda avanzada -->
+        <form class="advanced-search-form" action="https://www.google.com/search" method="GET">
+            <!-- Palabras clave -->
+            <div class="input-group">
+                <label for="all-words">Todas estas palabras:</label>
+                <input type="text" name="as_q" id="all-words" placeholder="palabras clave">
+                <span class="right-text">Ingresa las palabras importantes: Terrier ratonero tricolor .
+                </span> <!-- Texto derecho con tamaño de fuente menor -->
+            </div>
+            <div class="input-group">
+                <label for="exact-phrase">Esta frase exacta:</label>
+                <input type="text" name="as_epq" id="exact-phrase" placeholder="frase exacta">
+                <span class="right-text">Ingresa las palabras exactas entre comillas: "Terrier ratonero" .
+                </span> <!-- Texto derecho con tamaño de fuente menor -->
+            </div>
+            
+            <div class="input-group">
+                <label for="any-words">Cualquiera de estas palabras:</label>
+                <input type="text" name="as_oq" id="any-words" placeholder="una o más palabras">
+                <span class="right-text">Ingresa OR entre las palabras que desees: En miniatura OR estándar </span> <!-- Texto derecho con tamaño de fuente menor -->
+            </div>
+            
+            <div class="input-group">
+                <label for="none-words">Ninguna de estas palabras:</label>
+                <input type="text" name="as_eq" id="none-words" placeholder="excluir palabras">
+                <span class="right-text">Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" </span> <!-- Texto derecho con tamaño de fuente menor -->
+            </div>
+            <!-- Idioma -->
+            <div class="input-group">
+                <label for="language">Idioma:</label>
+                <select name="language" id="language">
+                    <option value="any">Cualquier idioma</option>
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <!-- Otras opciones de idiomas -->
+                </select>
+                <span class="right-text">Busca páginas en el idioma que seleccionas</span> <!-- Texto derecho con tamaño de fuente menor -->
+            </div>
+            
+
+  
+            <!-- Botón de búsqueda -->
+            <div class="buttons">
+                <button type="submit" class="btn">Buscar con Google</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
